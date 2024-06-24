@@ -1,0 +1,209 @@
+{
+  "menu": [
+    {
+      "title": "首頁",
+      "url": "#app",
+      "isAnchor": true
+    },
+    {
+      "title": "延伸閱讀",
+      "url": "#slider",
+      "isAnchor": true
+    },
+    {
+      "title": "更多新聞",
+      "url": "#card",
+      "isAnchor": true
+    },
+    {
+      "title": "今周刊",
+      "url": "https://www.businesstoday.com.tw/",
+      "isAnchor": false
+    }
+  ],
+  "title": "中國「白紙革命」是什麼？為何被認定六四後最大示威運動？4個「白紙革命」意義起源與進程",
+  "description": "近日在中國各地掀起的白紙革命，示威浪潮甚至在歐洲開展，被認為是1989年六四事件以來最大規模的中國集會示威運動。",
+  "url": "https://www.businesstoday.com.tw/article/category/183027/post/202211290024",
+  "article": [
+    {
+      "type": "p",
+      "content": "根據日本金融服務機構野村控股預測，至11月中旬，全中國有1/3地區與人口正受局部或完全封控，等同於中國經濟產出總量至少2/5受影響，讓企業與民眾已經出現防疫疲累。"
+    },
+    {
+      "type": "p",
+      "content": "11/22微信出現一篇《十問》的文章，該文章就當前中國執行動態清零政策時產生的問題，向衛健委提出了「十問」，其中提到2022年世界盃沒有核酸檢測及沒有現場觀眾戴口罩，質疑中國人現在是否活在不同的星球，獲廣泛轉載。"
+    },
+    {
+      "type": "p",
+      "content": "雖然這篇文章及相關帖文已遭刪除，外界視其為中國民眾對恢復正常生活遙遙無期發出的怨氣，而新疆大火更將怒火點燃，進而引爆「白紙革命」。"
+    },
+    {
+      "type": "chart",
+      "content": {
+        "tooltip": {
+          "trigger": "axis",
+          "axisPointer": {
+            "type": "cross",
+            "crossStyle": {
+              "color": "#999"
+            }
+          }
+        },
+        "legend": {
+          "data": ["Evaporation", "Precipitation", "Temperature"]
+        },
+        "xAxis": [
+          {
+            "type": "category",
+            "data": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+            "axisPointer": {
+              "type": "shadow"
+            }
+          }
+        ],
+        "yAxis": [
+          {
+            "type": "value",
+            "min": 0,
+            "max": 250,
+            "interval": 50,
+            "axisLabel": {
+              "formatter": "{value} ml"
+            }
+          },
+          {
+            "type": "value",
+            "min": 0,
+            "max": 25,
+            "interval": 5,
+            "axisLabel": {
+              "formatter": "{value} °C"
+            }
+          }
+        ],
+        "series": [
+          {
+            "name": "Evaporation",
+            "type": "bar",
+            "data": [2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3]
+          },
+          {
+            "name": "Precipitation",
+            "type": "bar",
+            "data": [2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3]
+          },
+          {
+            "name": "Temperature",
+            "type": "line",
+            "yAxisIndex": 1,
+            "data": [2.0, 2.2, 3.3, 4.5, 6.3, 10.2, 20.3, 23.4, 23.0, 16.5, 12.0, 6.2]
+          }
+        ]
+      }
+    },
+    {
+      "type": "h3",
+      "content": "白紙革命的意思",
+      "className": "text-2xl font-normal"
+    },
+    {
+      "type": "p",
+      "content": "一般認為「舉白紙」源自一個著名的蘇聯政治笑話：一個人在莫斯科廣場上高舉白紙，警察要將其逮捕，前者反問「我什麼都沒寫！」後者駡道「你以為我不知道你想寫什麼嗎？」有關這樣的逮捕行為，也出現在反對俄烏戰爭的俄羅斯示威當中，有民眾高舉白紙，寫上「這是一張紙」結果被警方逮捕。"
+    },
+    {
+      "type": "chart",
+      "content": {
+        "tooltip": {
+          "trigger": "item",
+          "formatter": "{a} <br/>{b} : {c} ({d}%)"
+        },
+        "legend": {
+          "orient": "vertical",
+          "left": "left",
+          "data": ["Direct", "Email", "Search Engines", "Ad Networks"]
+        },
+        "series": [
+          {
+            "name": "Traffic Sources",
+            "type": "pie",
+            "radius": "55%",
+            "center": ["50%", "60%"],
+            "data": [
+              { "value": 335, "name": "Direct" },
+              { "value": 310, "name": "Email" },
+              { "value": 1548, "name": "Search Engines" },
+              { "value": 234, "name": "Ad Networks" }
+            ],
+            "emphasis": {
+              "itemStyle": {
+                "shadowBlur": 10,
+                "shadowOffsetX": 0,
+                "shadowColor": "rgba(0, 0, 0, 0.5)"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "youtube",
+      "content": "aBU6f1Gq_g0"
+    },
+    {
+      "type": "h3",
+      "content": "白紙革命的開始",
+      "className": "text-2xl font-normal"
+    },
+    {
+      "type": "p",
+      "content": "這場政治示威潮的一開始，是中國民眾對於新冠疫情的長期無止境封控，感到無奈起而抗爭，包括市民、學生、工人的自發性行動，除了抗議動態清零政策外，亦號召中國人民要「學著覺醒」，起身抗議各種不合理的現象。"
+    }
+  ],
+  "slider": {
+    "title": "延伸閱讀",
+    "content": [
+      {
+        "title": "新北市推動重汙鍋爐退場 不再展延生煤許可 盼終結空汙夢魘",
+        "url": "https://pse.is/lr32p",
+        "image": "https://doqvf81n9htmm.cloudfront.net/data/crop_article/106596/92.jpg_1140x855.jpg"
+      },
+      {
+        "title": "桃園市虎頭山創新園區 專攻智慧製造等領域",
+        "url": "https://pse.is/x66kk",
+        "image": "https://doqvf81n9htmm.cloudfront.net/data/crop_article/106598/96.jpg_1140x855.jpg"
+      },
+      {
+        "title": "神奈川靠「市民力」 登日本最強永續城市",
+        "url": "https://pse.is/wfn9c",
+        "image": "https://doqvf81n9htmm.cloudfront.net/data/crop_article/106849/102.jpg_1140x855.jpg"
+      },
+      {
+        "title": "若每天睡到自然醒、看電視發呆，那幹嘛退休？學會5件事，玩出全新第二人生",
+        "url": "https://pse.is/wbt82",
+        "image": "https://doqvf81n9htmm.cloudfront.net/data/crop_article/101072/2020.04.24-3.jpg_1140x855.jpg"
+      },
+      {
+        "title": "今天開始，經營你的退休生活！獨立到老、不依賴子女，50歲後一定要做的8件事",
+        "url": "https://pse.is/wfekd",
+        "image": "https://doqvf81n9htmm.cloudfront.net/data/crop_article/100056/060401.jpg_1140x855.jpg"
+      }
+    ]
+  },
+  "news": {
+    "title": "更多新聞",
+    "content": [
+      {
+        "title": "她看似幸福無缺，怎麼還會這麼焦慮？擁有幸福快樂人生，從改變4個日常開始",
+        "description": "「別人都說我很幸福什麼都不缺，但是為什麼我還是會常感到焦慮、心慌？我的大伯譏諷說我得了『不知足』的病，真怕被他說中了。」",
+        "url": "https://pse.is/w7tu9",
+        "image": "https://doqvf81n9htmm.cloudfront.net/data/crop_article/104159/shutterstock_498664765.jpg_1140x855.jpg"
+      },
+      {
+        "title": "退休金700萬就夠用！江育誠：我用「0056＋勞保老年年金」，打造每月5萬生活費",
+        "description": "曾經有位讀者看到《今周刊》的報導之後寫信給我，她說工作已經30多年，也獲得一定的成績，做到高階主管，覺得自己的職場生涯已經到了一個轉捩點，她想要擁有不一樣的人生風景，非常希望能像我一樣，用興趣滋養生命，但是讓她遲遲無法下定決心的原因是，她不知道退休金的「安全數字」是多少。",
+        "url": "https://pse.is/vhqvg",
+        "image": "https://doqvf81n9htmm.cloudfront.net/data/crop_article/102087/Untitled.jpg_1140x855.jpg"
+      }
+    ]
+  }
+}
