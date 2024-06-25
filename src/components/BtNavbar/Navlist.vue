@@ -74,7 +74,7 @@ export default {
 
       } else {
         showChild.value = true;
-        // 根節點開啟時, 手動觸發click event關閉其他siblens
+        // 根節點開啟時, 手動觸發click event關閉其他siblings
         if (props.treeLevel === 1) emit('onTopLevelOpen');
 
         document.addEventListener('click', closeChildenNode);
