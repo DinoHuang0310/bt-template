@@ -85,8 +85,8 @@
     "className": "myClass myClass2" // 非必傳; 添加自訂class name
   },
   {
-    "type": "p",
-    "content": "段落文字"
+    "type": "img", // 傳入"img", content則傳入圖檔url
+    "content": "image url..."
   },
   {
     "type": "chart", // 傳入"chart"視為圖表, content則傳入echarts options
@@ -106,15 +106,15 @@
     <td> 輪播區塊:
 <pre>
 {
-    "title": "延伸閱讀", // 輪播區塊標題
-    "content": [
-      {
-        "title": "文章標題",
-        "url": "文章link",
-        "image": "圖檔url"
-      }
-    ]
-  }
+  "title": "延伸閱讀", // 輪播區塊標題
+  "content": [
+    {
+      "title": "文章標題",
+      "url": "文章link",
+      "image": "圖檔url"
+    }
+  ]
+}
 </pre>
     </td>
   </tr>
@@ -124,16 +124,31 @@
     <td> 新聞區塊:
 <pre>
 {
-    "title": "更多新聞", // 新聞區塊標題
-    "content": [
-      {
-        "title": "文章標題",
-        "description": "文章描述",
-        "url": "文章link",
-        "image": "圖檔url"
-      }
-    ]
+  "title": "更多新聞", // 新聞區塊標題
+  "content": [
+    {
+      "title": "文章標題",
+      "description": "文章描述",
+      "url": "文章link",
+      "image": "圖檔url"
+    }
+  ]
+}
+</pre>
+    </td>
+  </tr>
+  <tr>
+    <td> copyright </td>
+    <td> Array </td>
+    <td>
+<pre>
+"copyright": [
+  {
+    "type": "p", // 指定任意tag
+    "content": "Copyright © 2024 今周刊.All rights reserved. 版權所有，禁止擅自轉貼節錄",
+    "className": ""
   }
+]
 </pre>
     </td>
   </tr>

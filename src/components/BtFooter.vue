@@ -1,9 +1,18 @@
 <template>
   <footer class="bg-black/75 text-center px-4 py-12">
     <div class="space-y-1 text-xs text-white">
-      <p>內容監製: 今周刊</p>
-      <p>專題製作: 今周刊 數位內容部</p>
-      <p>Copyright © {{ year }} 今周刊.All rights reserved. 版權所有，禁止擅自轉貼節錄</p>
+      <div v-for="list in copyright" :key="list.index">
+        <img
+          v-if="list.type === 'img'"
+          :src="list.content"
+          :class="list.className"
+          alt=""
+        >
+
+        <component v-else :is="list.type" :class="list.className">
+          {{ list.content }}
+        </component>
+      </div>
     </div>
     
     <div v-if="showFloatButton" class="fixed right-0 bottom-0 z-10">
@@ -29,11 +38,18 @@ export default {
     showFloat: {
       type: Boolean,
       default: true
-    }
+    },
+    copyright: {
+      type: Array,
+      default: [
+        { type: "p", content: "內容監製: 今周刊" },
+        { type: "p", content: "專題製作: 今周刊 數位內容部" },
+        { type: "p", content: `Copyright © ${new Date().getFullYear()} 今周刊.All rights reserved. 版權所有，禁止擅自轉貼節錄` },
+      ]
+    },
   },
 
   setup(props) {
-    const year = new Date().getFullYear();
     const { height } = useClientSize();
     const { scrollTop } = useWindowScroll();
 
@@ -42,7 +58,6 @@ export default {
     })
     
     return {
-      year,
       showFloatButton,
       useScrollTo,
     }

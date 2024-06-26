@@ -51,7 +51,7 @@
 
     </main>
 
-    <BtFooter :showFloat="true" />
+    <BtFooter :copyright="info ? info.copyright : null" :showFloat="false" />
 
     <!-- light box container -->
     <ModalsContainer />
