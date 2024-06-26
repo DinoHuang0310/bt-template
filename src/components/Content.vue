@@ -6,11 +6,23 @@
     <div v-for="(list, index) in info.article" :key="index">
       <EChart
         v-if="list.type === 'chart'"
-        class="mt-8"
         :class="list.className"
         :chartOption="list.content"
       />
-      <BtYouTubePlayer v-else-if="list.type === 'youtube'" :videoId="list.content" />
+
+      <BtYouTubePlayer
+        v-else-if="list.type === 'youtube'"
+        :videoId="list.content"
+        :class="list.className"
+      />
+
+      <img
+        v-else-if="list.type === 'img'"
+        :src="list.content"
+        :class="list.className"
+        alt=""
+      >
+
       <component v-else :is="list.type" :class="list.className">
         {{ list.content }}
       </component>
