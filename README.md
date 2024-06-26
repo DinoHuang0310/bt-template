@@ -142,7 +142,7 @@
     <td> Array </td>
     <td>
 <pre>
-"copyright": [
+[
   {
     "type": "p", // 指定任意tag
     "content": "Copyright © 2024 今周刊.All rights reserved. 版權所有，禁止擅自轉貼節錄",
