@@ -2,7 +2,7 @@
 [Demo](https://dinohuang0310.github.io/bt-template/) 
 
 ## 無客製化
-  1. 下載static資料夾
+  1. 下載[static](https://github.com/DinoHuang0310/bt-template/tree/main/static) 資料夾
   2. 編輯index.html、infoData.json、更換圖檔等
   3. 上線
 
