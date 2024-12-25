@@ -6,10 +6,10 @@
           v-if="list.type === 'img'"
           :src="list.content"
           :class="list.className"
-          alt=""
+          v-bind="list.attr"
         >
 
-        <component v-else :is="list.type" :class="list.className">
+        <component v-else :is="list.type" :class="list.className" v-bind="list.attr">
           {{ list.content }}
         </component>
       </div>
