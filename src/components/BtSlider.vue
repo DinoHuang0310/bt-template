@@ -21,19 +21,17 @@
             >
               <div
                 v-if="theme === 'inside-title'"
-                class="aspect-[4/3] bg-cover bg-center duration-500 group-hover:md:opacity-75"
-                :style="{'background-image': `url('${list.image}')`}"
+                class="aspect-[4/3] duration-500 group-hover:md:opacity-75"
               >
+                <img loading="lazy" class="absolute w-full h-full object-cover" :src="list.image" :alt="list.title">
                 <p class="absolute w-full bottom-0 left-0 px-3 py-2 text-white bg-black/60">
                   <span class="line-clamp-2">{{ list.title }}</span>
                 </p>
               </div>
 
               <div v-if="theme === 'outside-title'">
-                <div
-                  class="relative aspect-[4/3] bg-cover bg-center"
-                  :style="{'background-image': `url('${list.image}')`}"
-                >
+                <div class="relative aspect-[4/3]">
+                  <img loading="lazy" class="absolute w-full h-full object-cover" :src="list.image" :alt="list.title">
                   <div
                     class="absolute w-full h-full top-0 left-0 flex justify-center items-center opacity-0 group-hover:md:opacity-100 transform duration-500 bg-black/70"
                   >

@@ -2,7 +2,9 @@
   <ContentWrapper class="md:p-7">
     <div class="sm:flex">
       <div class="sm:w-1/3">
-        <img :src="article.image" :alt="article.title">
+        <div class="relative aspect-[4/3]">
+          <img class="absolute w-full h-full object-cover" loading="lazy" :src="article.image" :alt="article.title">
+        </div>
       </div>
       <div class="flex-1 sm:pl-6 space-y-1 sm:space-y-2">
         <h4 class="text-lg xl:text-xl mt-2 sm:mt-0">
