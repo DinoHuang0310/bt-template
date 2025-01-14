@@ -32,7 +32,7 @@
       <a
         class="inline-block border border-secondary px-4 py-2 mt-4 font-normal"
         :href="info.url"
-        target="blank"
+        target="_blank"
       >了解更多</a>
     </div>
     

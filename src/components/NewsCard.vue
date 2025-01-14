@@ -16,7 +16,7 @@
           <a
             class="block w-full sm:w-auto bg-primary text-white text-sm text-center p-2 sm:py-1 mt-1 sm:mt-0 rounded"
             :href="article.url"
-            target="blank"
+            target="_blank"
           >了解更多</a>
         </div>
       </div>

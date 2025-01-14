@@ -16,7 +16,7 @@
             <a
               v-else
               :href="list.url"
-              target="blank"
+              target="_blank"
               class="relative block w-full group"
             >
               <div

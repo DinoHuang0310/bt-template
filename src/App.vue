@@ -1,30 +1,32 @@
 <template>
   <div class="relative bg-gray-100">
     <header class="sticky flex justify-between items-center w-full top-0 px-4 py-2 bg-white border-b z-50">
-      <a class="block w-16 xl:w-20" href="https://www.businesstoday.com.tw/" target="blank">
-        <img src="./assets/images/businesstoday.svg" alt="businesstoday">
-      </a>
+      <div class="w-16 xl:w-20">
+        <a class="relative block w-full pb-[43.75%]" href="https://www.businesstoday.com.tw/" target="_blank">
+          <img class="absolute w-full h-full object-cover" src="./assets/images/businesstoday.svg" alt="businesstoday">
+        </a>
+      </div>
       <BtNavbar :navList="info.menu" :closeByBackdrop="true" :collapse="true" />
     </header>
 
     <main :style="{'background-image': `url(${imgUrl})`}">
       <div
-        class="pb-[50%] md:pb-[40%] lg:pb-[30%] bg-cover bg-center shadow-inner"
+        class="pb-[110%] sm:pb-[40%] bg-cover bg-center shadow-inner"
         :style="{'background-image': `url(${setBanner})`}"
       />
 
-      <h1 class="text-2xl lg:text-3xl xl:text-4xl sm:text-center my-8 xl:leading-snug mx-auto w-11/12 max-w-screen-lg">
-        {{ info.title }}
-      </h1>
+      <article>
+        <h1 class="text-2xl lg:text-3xl xl:text-4xl sm:text-center my-8 xl:leading-snug mx-auto w-11/12 max-w-screen-lg min-h-[1.375em]">
+          {{ info.title }}
+        </h1>
 
-      <article class="container pb-20">
-        <Introduction>
-          {{ info.description }}
-        </Introduction>
-        
-        <ContentWrapper class="my-8">
-          <Content v-if="info" />
-        </ContentWrapper>
+        <div class="container pb-20">
+          <Introduction v-if="info?.description" />
+          
+          <ContentWrapper class="my-8">
+            <Content v-if="info" />
+          </ContentWrapper>
+        </div>
       </article>
 
       <div v-if="info.slider" class="bg-white">

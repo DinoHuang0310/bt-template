@@ -11,9 +11,15 @@
   --color-secondary: #505050;
 }
 
-html {
+html, body {
   font-family: 'Noto Sans TC', sans-serif, 'Microsoft JhengHei', arial;
-  font-size: 19px;
+  font-size: 20px;
   color: #505050;
   letter-spacing: 0.1rem;
+}
+
+@media screen and (min-width: 768px) {
+  html, body {
+    font-size: 19px;
+  }
 }
