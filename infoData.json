@@ -39,7 +39,10 @@
     },
     {
       "type": "img",
-      "content": "https://doqvf81n9htmm.cloudfront.net/data/c33772002_229/202205/202208/%E6%88%AA%E5%9C%96%202022-11-27%20%E4%B8%8B%E5%8D%888_12_07.png"
+      "content": "https://doqvf81n9htmm.cloudfront.net/data/c33772002_229/202205/202208/%E6%88%AA%E5%9C%96%202022-11-27%20%E4%B8%8B%E5%8D%888_12_07.png",
+      "attr": {
+        "loading": "lazy"
+      }
     },
     {
       "type": "h3",
